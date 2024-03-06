@@ -26,8 +26,26 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+* {
+  box-sizing: border-box;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.navbar-swiper .swiper-button-prev {
+  @apply bg-white rounded-full w-8 h-8 top-7 left-12;
+}
+.navbar-swiper .swiper-button-next {
+  @apply bg-white rounded-full w-8 h-8 top-7 right-12;
+}
+
+.navbar-swiper .swiper-button-prev:after,
+.navbar-swiper .swiper-button-next:after {
+  font-size: 10px;
+  font-weight: 800;
+  color: #2d2a49;
 }
