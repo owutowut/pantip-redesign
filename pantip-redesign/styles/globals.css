@@ -30,17 +30,14 @@ body {
   box-sizing: border-box;
 }
 
+mark {
+  @apply bg-transparent text-[#fbc02d] font-medium;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.navbar-swiper .swiper-button-prev {
-  @apply bg-white rounded-full w-8 h-8 top-7 left-12;
-}
-.navbar-swiper .swiper-button-next {
-  @apply bg-white rounded-full w-8 h-8 top-7 right-12;
 }
 
 .navbar-swiper .swiper-button-prev:after,
@@ -48,4 +45,49 @@ body {
   font-size: 10px;
   font-weight: 800;
   color: #2d2a49;
+}
+
+.ant-popover {
+  font-family: var(--font-kanit);
+}
+
+@media (min-width: 425px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-0;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-0;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-10;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-10;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-12;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-12;
+  }
+}
+@media (min-width: 1440px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-20;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-20;
+  }
+}
+@media (min-width: 2560px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-12;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-12;
+  }
 }
