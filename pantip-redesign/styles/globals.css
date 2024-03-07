@@ -6,7 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} 
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -30,6 +30,10 @@ body {
   box-sizing: border-box;
 }
 
+mark {
+  @apply bg-transparent text-[#fbc02d] font-medium;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -48,4 +52,8 @@ body {
   font-size: 10px;
   font-weight: 800;
   color: #2d2a49;
+}
+
+.ant-popover {
+  font-family: var(--font-kanit);
 }
