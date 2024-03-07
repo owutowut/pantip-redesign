@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={kanit.className}>
         <Navbar />
-        <main className="mt-[11rem]">
+        <main className="mt-[11rem] overflow-hidden">
           {children}
         </main>
         <Footer />

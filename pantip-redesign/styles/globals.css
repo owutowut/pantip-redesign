@@ -6,7 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-} 
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -40,13 +40,6 @@ mark {
   }
 }
 
-.navbar-swiper .swiper-button-prev {
-  @apply bg-white rounded-full w-8 h-8 top-7 left-12;
-}
-.navbar-swiper .swiper-button-next {
-  @apply bg-white rounded-full w-8 h-8 top-7 right-12;
-}
-
 .navbar-swiper .swiper-button-prev:after,
 .navbar-swiper .swiper-button-next:after {
   font-size: 10px;
@@ -56,4 +49,45 @@ mark {
 
 .ant-popover {
   font-family: var(--font-kanit);
+}
+
+@media (min-width: 425px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-0;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-0;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-10;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-10;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-12;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-12;
+  }
+}
+@media (min-width: 1440px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-20;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-20;
+  }
+}
+@media (min-width: 2560px) {
+  .navbar-swiper .swiper-button-prev {
+    @apply bg-white rounded-full w-8 h-8 top-7 left-12;
+  }
+  .navbar-swiper .swiper-button-next {
+    @apply bg-white rounded-full w-8 h-8 top-7 right-12;
+  }
 }
